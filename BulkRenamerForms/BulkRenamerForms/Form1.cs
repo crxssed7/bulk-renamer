@@ -43,11 +43,11 @@ namespace BulkRenamerForms
 
                     if (i + 1 > 0 && i + 1 <= 9)
                     {
-                        Number = "00" + (i + 1);
+                        Number = "0" + (i + 1);
                     }
                     else
                     {
-                        Number = "0" + (i + 1);
+                        Number = (i + 1).ToString();
                     }
 
                     if (FileInf.Exists)
