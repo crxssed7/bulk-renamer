@@ -27,17 +27,17 @@ namespace BulkRenamerForms
             string BaseName = "";
             string FileType = "";
 
-            if (loc.Text.Trim() != "" && bname.Text.Trim() != "" && ftype.Text.Trim() != "" && Files.Count > 0)
+            if (loc.Text.Trim() != "" && bname.Text.Trim() != "" && Files.Count > 0)
             {
                 Folder = loc.Text.Trim();
                 BaseName = bname.Text.Trim();
-                FileType = ftype.Text.Trim();
 
                 for (int i = 0; i < Files.Count; i++)
                 {
                     string Source = Files[i];
 
                     FileInfo FileInf = new FileInfo(Source);
+                    FileType = FileInf.Extension;
 
                     string Number;
 
@@ -52,7 +52,7 @@ namespace BulkRenamerForms
 
                     if (FileInf.Exists)
                     {
-                        FileInf.MoveTo(Folder + BaseName + Number + "." + FileType);
+                        FileInf.MoveTo(Folder + BaseName + Number + FileType);
                         listBox2.Items.Add(FileInf.DirectoryName + @"\" + FileInf.Name);
                     }
                 }

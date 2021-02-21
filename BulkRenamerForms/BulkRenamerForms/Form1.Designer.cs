@@ -31,15 +31,13 @@
             this.add = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.loc = new System.Windows.Forms.TextBox();
             this.bname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.ftype = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.loc = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.rename = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
@@ -78,10 +76,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Items";
             // 
+            // listBox1
+            // 
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
+            this.listBox1.Location = new System.Drawing.Point(6, 26);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.ScrollAlwaysVisible = true;
+            this.listBox1.Size = new System.Drawing.Size(186, 147);
+            this.listBox1.TabIndex = 4;
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.ftype);
-            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.bname);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.loc);
@@ -93,24 +100,6 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Options";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(7, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Rename Location:";
-            // 
-            // loc
-            // 
-            this.loc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.loc.Location = new System.Drawing.Point(7, 50);
-            this.loc.Name = "loc";
-            this.loc.Size = new System.Drawing.Size(185, 23);
-            this.loc.TabIndex = 1;
             // 
             // bname
             // 
@@ -130,23 +119,23 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Base Name:";
             // 
-            // ftype
+            // loc
             // 
-            this.ftype.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ftype.Location = new System.Drawing.Point(7, 150);
-            this.ftype.Name = "ftype";
-            this.ftype.Size = new System.Drawing.Size(185, 23);
-            this.ftype.TabIndex = 5;
+            this.loc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.loc.Location = new System.Drawing.Point(7, 50);
+            this.loc.Name = "loc";
+            this.loc.Size = new System.Drawing.Size(185, 23);
+            this.loc.TabIndex = 1;
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(7, 129);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "File Type:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.Location = new System.Drawing.Point(7, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(123, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Rename Location:";
             // 
             // rename
             // 
@@ -157,17 +146,6 @@
             this.rename.Text = "Rename All";
             this.rename.UseVisualStyleBackColor = true;
             this.rename.Click += new System.EventHandler(this.rename_Click);
-            // 
-            // listBox1
-            // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.HorizontalScrollbar = true;
-            this.listBox1.Location = new System.Drawing.Point(6, 26);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.ScrollAlwaysVisible = true;
-            this.listBox1.Size = new System.Drawing.Size(186, 147);
-            this.listBox1.TabIndex = 4;
             // 
             // groupBox3
             // 
@@ -220,8 +198,6 @@
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox ftype;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox bname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox loc;
